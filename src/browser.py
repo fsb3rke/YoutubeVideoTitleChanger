@@ -47,3 +47,8 @@ class Browser:
         gotoMychannel = self.browser.find_element_by_xpath("/html/body/ytd-app/ytd-popup-container/tp-yt-iron-dropdown/div/ytd-multi-page-menu-renderer/div[3]/div[1]/yt-multi-page-menu-section-renderer[1]/div[2]/ytd-compact-link-renderer[1]/a")
         taym(2)
         gotoMychannel.click()
+        taym(2)
+        gotoMyvideo = self.browser.find_element_by_xpath("/html/body/ytd-app/div/ytd-page-manager/ytd-browse[2]/div[3]/ytd-c4-tabbed-header-renderer/tp-yt-app-header-layout/div/tp-yt-app-header/div[2]/tp-yt-app-toolbar/div/div/tp-yt-paper-tabs/div/div/tp-yt-paper-tab[2]")
+        taym(2)
+        gotoMyvideo.click()
+        taym(2)
