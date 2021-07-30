@@ -1,5 +1,9 @@
 from selenium import webdriver
 import time
+import pref
+
+with open('pref.json') as f:
+    data = json.load(f)
 
 def taym(taymc):
     time.sleep(taymc)
@@ -25,7 +29,7 @@ class Browser:
         signinMailInput.click()
         taym(2)
         #youtube acc mail
-        signinMailInput.send_keys("")
+        signinMailInput.send_keys(pref.username)
         taym(2)
         contBtn = self.browser.find_element_by_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button")
         taym(2)
