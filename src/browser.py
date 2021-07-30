@@ -2,9 +2,6 @@ from selenium import webdriver
 import time
 import pref
 
-with open('pref.json') as f:
-    data = json.load(f)
-
 def taym(taymc):
     time.sleep(taymc)
 
