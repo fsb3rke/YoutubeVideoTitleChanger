@@ -40,7 +40,7 @@ class Browser:
         passwordInput.click()
         taym(2)
         #youtube acc password
-        passwordInput.send_keys("")
+        passwordInput.send_keys(pref.password)
         taym(2)
         cont2Btn = self.browser.find_element_by_xpath("/html/body/div[1]/div[1]/div[2]/div/div[2]/div/div/div[2]/div/div[2]/div/div[1]/div/div/button")
         taym(2)
@@ -59,7 +59,7 @@ class Browser:
         gotoMyvideo.click()
         taym(2)
         #chose your video
-        self.browser.get("")
+        self.browser.get(pref.video)
         taym(2)
         editvideoBtn = self.browser.find_element_by_xpath("/html/body/ytd-app/div/ytd-page-manager/ytd-watch-flexy/div[5]/div[1]/div/div[9]/div[2]/ytd-video-secondary-info-renderer/div/div/div/ytd-button-renderer/a")
         taym(2)
